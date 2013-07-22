@@ -1,8 +1,11 @@
-$btnPrimaryBackground : brown;
+$btnPrimaryBackground : blue;
 
 @import 'bootstrap';
 
 @import 'bootstrap-responsive';
 body{
 	padding-top: 4rem;
+}
+.description{
+	color: gray;
 }
