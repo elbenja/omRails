@@ -1,24 +1,17 @@
-		<%= link_to 'Back', pins_path %>
-		<div class="row">
-			
+<div class="row">
     <div class="span6 offset3">
         <div class="well">
-        	<p>
-					  <b>Description:</b>
-					  <%= @pin.description %>
-
-					</p>
-					<small><i><%= @pin.user.name %></i></small>
-
-<div>
-	<% if current_user == @pin.user %>
+            <%= image_tag @pin.image %>
+            <p>
+              <%= @pin.description %>
+            </p>
+            <p>
+              <%= @pin.user.name %>
+            </p>
+            <% if current_user == @pin.user %>
                 <%= link_to 'Edit', edit_pin_path(@pin) %> |
             <% end %>
-
-</div>
-	         
-
+            <%= link_to 'Back', pins_path %>
         </div>
-    </div>			
+    </div>
 </div>
-
