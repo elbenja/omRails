@@ -6,6 +6,24 @@ $btnPrimaryBackground : blue;
 body{
 	padding-top: 4rem;
 }
-.description{
+.description, small{
 	color: gray;
+}
+.box{
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	@include border-radius(5px);
+	@include box-shadow (1px 1px 10px rgba(0,0,0,.1) );
+	width: 214px;
+}
+.box img {
+    width: 100%;
+    @include border-radius(5px);
+}
+
+.description {
+    margin: 10px 0 5px;
 }
