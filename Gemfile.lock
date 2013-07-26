@@ -36,6 +36,8 @@ GEM
     bcrypt-ruby (3.1.1)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
+    bootstrap-will_paginate (0.0.6)
+      will_paginate
     builder (3.0.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -61,6 +63,8 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     ffi (1.9.0)
     formatador (0.2.4)
     guard (1.8.1)
@@ -163,6 +167,7 @@ GEM
     uuidtools (2.1.4)
     warden (1.2.3)
       rack (>= 1.0)
+    will_paginate (3.0.3)
 
 PLATFORMS
   ruby
@@ -170,8 +175,10 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk
   bootstrap-sass (~> 2.3.2.0)
+  bootstrap-will_paginate (= 0.0.6)
   coffee-rails (~> 3.2.1)
   devise
+  faker
   guard
   guard-livereload
   jquery-rails
@@ -182,3 +189,4 @@ DEPENDENCIES
   simple_form
   sqlite3
   uglifier (>= 1.0.3)
+  will_paginate (= 3.0.3)
